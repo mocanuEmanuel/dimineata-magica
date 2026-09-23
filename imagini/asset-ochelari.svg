@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="lentilaG" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#4FC3F7"/><stop offset="100%" stop-color="#01579B"/></linearGradient>
+  </defs>
+  <rect x="44" y="82" width="48" height="38" rx="15" fill="url(#lentilaG)" stroke="#263238" stroke-width="5.5"/>
+  <rect x="108" y="82" width="48" height="38" rx="15" fill="url(#lentilaG)" stroke="#263238" stroke-width="5.5"/>
+  <path d="M92 96 C96 88 104 88 108 96" fill="none" stroke="#263238" stroke-width="5.5" stroke-linecap="round"/>
+  <path d="M44 94 L26 88" stroke="#263238" stroke-width="5.5" stroke-linecap="round"/>
+  <path d="M156 94 L174 88" stroke="#263238" stroke-width="5.5" stroke-linecap="round"/>
+  <circle cx="25" cy="87" r="4" fill="#263238"/>
+  <circle cx="175" cy="87" r="4" fill="#263238"/>
+  <path d="M54 90 L84 112" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" opacity="0.55"/>
+  <path d="M118 90 L148 112" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" opacity="0.55"/>
+  <circle cx="136" cy="96" r="5" fill="#FFFFFF" opacity="0.75"/>
+  <circle cx="140" cy="101" r="3" fill="#FFFFFF" opacity="0.6"/>
+  <g fill="#FFD54F" stroke="#F9A825" stroke-width="1.5">
+    <path d="M44 52 l2.6 6 6 2.6 -6 2.6 -2.6 6 -2.6 -6 -6 -2.6 6 -2.6 Z"/>
+    <path d="M158 150 l2.2 5 5 2.2 -5 2.2 -2.2 5 -2.2 -5 -5 -2.2 5 -2.2 Z"/>
+  </g>
+  <ellipse cx="100" cy="140" rx="40" ry="7" fill="#5D4037" opacity="0.12"/>
+</svg>

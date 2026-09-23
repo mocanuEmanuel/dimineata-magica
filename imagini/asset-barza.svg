@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <radialGradient id="barzaG" cx="45%" cy="35%" r="80%"><stop offset="0%" stop-color="#FFFFFF"/><stop offset="100%" stop-color="#E8F0F4"/></radialGradient>
+  </defs>
+  <line x1="90" y1="146" x2="88" y2="192" stroke="#EF5350" stroke-width="6" stroke-linecap="round"/>
+  <line x1="106" y1="146" x2="110" y2="192" stroke="#EF5350" stroke-width="6" stroke-linecap="round"/>
+  <path d="M88 192 L80 194 M88 192 L88 196 M88 192 L96 194" stroke="#EF5350" stroke-width="4" stroke-linecap="round"/>
+  <path d="M110 192 L102 194 M110 192 L110 196 M110 192 L118 194" stroke="#EF5350" stroke-width="4" stroke-linecap="round"/>
+  <path d="M66 100 C60 116 58 128 64 140 C70 150 82 154 92 154 C104 154 118 150 126 140 C134 128 134 112 128 96 Z" fill="url(#barzaG)" stroke="#90A4AE" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M128 96 C126 104 126 116 128 128 C124 122 120 116 118 108 C116 100 116 92 120 86 C122 88 126 90 128 96 Z" fill="url(#barzaG)" stroke="#90A4AE" stroke-width="4.5" stroke-linejoin="round"/>
+  <path d="M72 96 C76 84 84 72 96 66 C102 62 108 60 112 62 C108 66 100 72 94 82 C90 88 84 92 80 96 Z" fill="url(#barzaG)" stroke="#90A4AE" stroke-width="4.5" stroke-linejoin="round"/>
+  <circle cx="114" cy="56" r="11" fill="url(#barzaG)" stroke="#90A4AE" stroke-width="4"/>
+  <path d="M124 52 L154 62 L124 70 Z" fill="#EF5350" stroke="#C62828" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="117" cy="54" r="2.2" fill="#37474F"/>
+  <path d="M78 106 C72 120 70 132 76 142 C84 150 94 152 102 152 C112 152 122 148 128 138 C124 140 120 141 116 140 C108 138 100 136 94 134 C88 130 82 120 78 106 Z" fill="#263238" stroke="#263238" stroke-width="3" stroke-linejoin="round"/>
+  <g fill="#FFFFFF" stroke="#78909C" stroke-width="2" stroke-linejoin="round">
+    <path d="M84 124 l6 10 l8 -6 Z"/>
+    <path d="M94 136 l6 8 l8 -5 Z"/>
+  </g>
+  <path d="M64 94 L50 100 L58 108 Z" fill="#263238"/>
+  <ellipse cx="98" cy="198" rx="40" ry="7" fill="#5D4037" opacity="0.12"/>
+  <g fill="#4FC3F7">
+    <path d="M40 40 q4 -8 9 -6 q-1 8 -9 6"/>
+    <path d="M164 44 q4 -8 9 -6 q-1 8 -9 6"/>
+  </g>
+</svg>

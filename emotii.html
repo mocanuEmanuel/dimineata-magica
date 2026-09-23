@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emoții — Întâlnirea de dimineață</title>
+  <link rel="icon" href="imagini/fata-zambitoare-ico.svg">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-pagina="emotii">
+  <header class="bara-sus">
+    <nav class="meniu" aria-label="Navigație principală">
+      <a class="buton-meniu buton-calendar" href="index.html">
+        <img src="imagini/calendar-ico.svg" alt="">
+        <span>Calendar</span>
+      </a>
+      <a class="buton-meniu buton-prezenta" href="prezenta.html">
+        <img src="imagini/bifa-ico.svg" alt="">
+        <span>Prezență</span>
+      </a>
+      <a class="buton-meniu buton-emotii activ" href="emotii.html" aria-current="page">
+        <img src="imagini/fata-zambitoare-ico.svg" alt="">
+        <span>Emoții</span>
+      </a>
+      <a class="buton-meniu buton-anotimpuri" href="anotimpuri.html">
+        <img src="imagini/anotimpuri-ico.svg" alt="">
+        <span>Anotimpuri</span>
+      </a>
+    </nav>
+  </header>
+
+  <main class="continut">
+    <section class="zona-principala" aria-label="Jocul emoțiilor">
+      <h1 class="titlu"><img class="ico-titlu" src="imagini/fata-zambitoare-ico.svg" alt="">Potrivește emoțiile!</h1>
+
+      <div class="zona-emotii">
+        <div class="zona-drop cutie-emotie tema-galben" data-emotie="fericire">
+          <span class="eticheta-emotie">Fericire</span>
+          <span class="text-ajutor">trage fața aici</span>
+        </div>
+        <div class="zona-drop cutie-emotie tema-albastru" data-emotie="tristete">
+          <span class="eticheta-emotie">Tristețe</span>
+          <span class="text-ajutor">trage fața aici</span>
+        </div>
+        <div class="zona-drop cutie-emotie tema-rosu" data-emotie="furie">
+          <span class="eticheta-emotie">Furie</span>
+          <span class="text-ajutor">trage fața aici</span>
+        </div>
+        <div class="zona-drop cutie-emotie tema-portocaliu" data-emotie="uimire">
+          <span class="eticheta-emotie">Uimire</span>
+          <span class="text-ajutor">trage fața aici</span>
+        </div>
+        <div class="zona-drop cutie-emotie tema-violet" data-emotie="frica">
+          <span class="eticheta-emotie">Frică</span>
+          <span class="text-ajutor">trage fața aici</span>
+        </div>
+        <div class="zona-drop cutie-emotie tema-verde" data-emotie="oboseala">
+          <span class="eticheta-emotie">Oboseală</span>
+          <span class="text-ajutor">trage fața aici</span>
+        </div>
+      </div>
+
+      <p class="mesaj-final" id="mesaj-final" hidden>Bravo! Ați potrivit toate emoțiile!</p>
+      <button type="button" class="buton-reset" id="buton-reset" hidden>Joacă din nou</button>
+    </section>
+
+    <aside class="panou-lateral" aria-label="Fețele emoțiilor">
+      <h2 class="titlu-panou"><img class="ico-panou" src="imagini/paleta-ico.svg" alt="">Fețele emoțiilor</h2>
+
+      <div class="grup-fila" data-fila="fete">
+        <div class="carti">
+          <button type="button" class="card tema-galben" data-emotie="fericire" draggable="true">
+            <img src="imagini/fericire.svg" alt="Fericire" draggable="false">
+            <span class="nume">Fericire</span>
+          </button>
+          <button type="button" class="card tema-albastru" data-emotie="tristete" draggable="true">
+            <img src="imagini/tristete.svg" alt="Tristețe" draggable="false">
+            <span class="nume">Tristețe</span>
+          </button>
+          <button type="button" class="card tema-rosu" data-emotie="furie" draggable="true">
+            <img src="imagini/furie.svg" alt="Furie" draggable="false">
+            <span class="nume">Furie</span>
+          </button>
+          <button type="button" class="card tema-portocaliu" data-emotie="uimire" draggable="true">
+            <img src="imagini/uimire.svg" alt="Uimire" draggable="false">
+            <span class="nume">Uimire</span>
+          </button>
+          <button type="button" class="card tema-violet" data-emotie="frica" draggable="true">
+            <img src="imagini/frica.svg" alt="Frică" draggable="false">
+            <span class="nume">Frică</span>
+          </button>
+          <button type="button" class="card tema-verde" data-emotie="oboseala" draggable="true">
+            <img src="imagini/oboseala.svg" alt="Oboseală" draggable="false">
+            <span class="nume">Oboseală</span>
+          </button>
+        </div>
+      </div>
+    </aside>
+  </main>
+</body>
+</html>

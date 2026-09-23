@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="caciulaG" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#64B5F6"/><stop offset="100%" stop-color="#1E88E5"/></linearGradient>
+  </defs>
+  <path d="M52 116 A48 48 0 0 1 148 116 Z" fill="url(#caciulaG)" stroke="#0D47A1" stroke-width="5"/>
+  <path d="M60 110 C64 96 76 86 88 82" fill="none" stroke="#BBDEFB" stroke-width="4" stroke-linecap="round" opacity="0.7"/>
+  <rect x="46" y="110" width="108" height="26" rx="12" fill="#FFFFFF" stroke="#B0BEC5" stroke-width="4.5"/>
+  <path d="M64 123 v8 M82 123 v8 M100 123 v8 M118 123 v8 M136 123 v8" stroke="#CFD8DC" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="100" cy="66" r="13" fill="#FFFFFF" stroke="#B0BEC5" stroke-width="4"/>
+  <path d="M92 72 C90 78 88 82 84 84 M108 72 C110 78 112 82 116 84" stroke="#B0BEC5" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+  <ellipse cx="72" cy="58" rx="6" ry="10" fill="#FFFFFF" opacity="0.5" transform="rotate(-18 72 58)"/>
+  <g fill="#FFFFFF" stroke="#90CAF9" stroke-width="1.5">
+    <circle cx="42" cy="60" r="3.4"/><circle cx="158" cy="50" r="3"/><circle cx="164" cy="110" r="2.6"/><circle cx="38" cy="124" r="2.4"/>
+  </g>
+</svg>

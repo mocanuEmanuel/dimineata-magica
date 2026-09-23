@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anotimpurile — Întâlnirea de dimineață</title>
+  <link rel="icon" href="imagini/anotimpuri-ico.svg">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-pagina="anotimpuri">
+  <header class="bara-sus">
+    <nav class="meniu" aria-label="Navigație principală">
+      <a class="buton-meniu buton-calendar" href="index.html">
+        <img src="imagini/calendar-ico.svg" alt="">
+        <span>Calendar</span>
+      </a>
+      <a class="buton-meniu buton-prezenta" href="prezenta.html">
+        <img src="imagini/bifa-ico.svg" alt="">
+        <span>Prezență</span>
+      </a>
+      <a class="buton-meniu buton-emotii" href="emotii.html">
+        <img src="imagini/fata-zambitoare-ico.svg" alt="">
+        <span>Emoții</span>
+      </a>
+      <a class="buton-meniu buton-anotimpuri activ" href="anotimpuri.html" aria-current="page">
+        <img src="imagini/anotimpuri-ico.svg" alt="">
+        <span>Anotimpuri</span>
+      </a>
+    </nav>
+  </header>
+
+  <main class="continut" id="continut-anotimpuri">
+    <section class="zona-principala" aria-label="Alege anotimpul" id="view-alegere">
+      <h1 class="titlu"><img class="ico-titlu" src="imagini/anotimpuri-ico.svg" alt="">Alege un anotimp</h1>
+      <p class="text-intro-alegere">Zâna anotimpului te așteaptă. Alege un anotimp și potrivește obiectele!</p>
+
+      <div class="grid-alegere-anotimp" id="grid-alegere">
+        <button type="button" class="alegere-anotimp tema-verde" data-anotimp="primavara">
+          <img src="imagini/zana-primavara.jpg" alt="">
+          <span>Primăvara</span>
+        </button>
+        <button type="button" class="alegere-anotimp tema-galben" data-anotimp="vara">
+          <img src="imagini/zana-vara.jpg" alt="">
+          <span>Vara</span>
+        </button>
+        <button type="button" class="alegere-anotimp tema-portocaliu" data-anotimp="toamna">
+          <img src="imagini/zana-toamna.jpg" alt="">
+          <span>Toamna</span>
+        </button>
+        <button type="button" class="alegere-anotimp tema-albastru" data-anotimp="iarna">
+          <img src="imagini/zana-iarna.jpg" alt="">
+          <span>Iarna</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="zona-principala" aria-label="Jocul anotimpurilor" id="view-joc" hidden>
+      <div class="cap-joc">
+        <button type="button" class="buton-inapoi" id="buton-inapoi">
+          <img class="ico-inapoi" src="imagini/sageata-ico.svg" alt="" width="18" height="18">
+          Schimbă anotimpul
+        </button>
+        <h1 class="titlu" id="titlu-joc">Primăvara</h1>
+      </div>
+
+      <p class="bara-progres" id="bara-progres">
+        <img src="imagini/creion-ico.svg" alt="" class="ico-progres">
+        <span class="text-progres" id="text-progres">0 din 4 potrivite</span>
+        <span class="pista-progres"><span class="umplere-progres" id="umplere-progres"></span></span>
+      </p>
+
+      <div class="zona-anotimpuri">
+        <div class="zona-drop zona-anotimp" id="zona-joc" data-anotimp="primavara" aria-label="Zona de potrivire">
+          <span class="eticheta-anotimp">
+            <span id="eticheta-anotimp">Primăvara</span>
+          </span>
+          <span class="text-ajutor">trage obiectele aici</span>
+        </div>
+      </div>
+
+      <p class="mesaj-final" id="mesaj-final" hidden>Bravo! Ai potrivit toate obiectele!</p>
+      <div class="actiuni-joc">
+        <button type="button" class="buton-reset" id="buton-reset" hidden>Joacă din nou</button>
+      </div>
+    </section>
+
+    <aside class="panou-lateral" id="panou-obiecte" aria-label="Obiectele de potrivit" hidden>
+      <h2 class="titlu-panou"><img class="ico-panou" src="imagini/cos-ico.svg" alt="">Căsuța cu obiecte</h2>
+
+      <div class="grup-fila" data-fila="obiecte">
+        <div class="carti carti-obiecte" id="carti-obiecte">
+          <button type="button" class="card tema-portocaliu" data-anotimp="toamna" data-obiect="mar" draggable="true">
+            <img src="imagini/asset-mar.svg" alt="Măr" draggable="false">
+            <span class="nume">Măr</span>
+          </button>
+          <button type="button" class="card tema-portocaliu" data-anotimp="toamna" data-obiect="frunza" draggable="true">
+            <img src="imagini/asset-frunza.svg" alt="Frunză" draggable="false">
+            <span class="nume">Frunză</span>
+          </button>
+          <button type="button" class="card tema-portocaliu" data-anotimp="toamna" data-obiect="umbrela" draggable="true">
+            <img src="imagini/asset-umbrela.svg" alt="Umbrelă" draggable="false">
+            <span class="nume">Umbrelă</span>
+          </button>
+          <button type="button" class="card tema-portocaliu" data-anotimp="toamna" data-obiect="dovleac" draggable="true">
+            <img src="imagini/asset-dovleac.svg" alt="Dovleac" draggable="false">
+            <span class="nume">Dovleac</span>
+          </button>
+          <button type="button" class="card tema-albastru" data-anotimp="iarna" data-obiect="caciula" draggable="true">
+            <img src="imagini/asset-caciula.svg" alt="Căciulă" draggable="false">
+            <span class="nume">Căciulă</span>
+          </button>
+          <button type="button" class="card tema-albastru" data-anotimp="iarna" data-obiect="om-zapada" draggable="true">
+            <img src="imagini/asset-om-zapada.svg" alt="Om de zăpadă" draggable="false">
+            <span class="nume">Om de zăpadă</span>
+          </button>
+          <button type="button" class="card tema-albastru" data-anotimp="iarna" data-obiect="manusi" draggable="true">
+            <img src="imagini/asset-manusi.svg" alt="Mănuși" draggable="false">
+            <span class="nume">Mănuși</span>
+          </button>
+          <button type="button" class="card tema-albastru" data-anotimp="iarna" data-obiect="fulg" draggable="true">
+            <img src="imagini/asset-fulg.svg" alt="Fulg de zăpadă" draggable="false">
+            <span class="nume">Fulg de zăpadă</span>
+          </button>
+          <button type="button" class="card tema-verde" data-anotimp="primavara" data-obiect="floare" draggable="true">
+            <img src="imagini/asset-floare.svg" alt="Floare" draggable="false">
+            <span class="nume">Floare</span>
+          </button>
+          <button type="button" class="card tema-verde" data-anotimp="primavara" data-obiect="fluture" draggable="true">
+            <img src="imagini/asset-fluture.svg" alt="Fluture" draggable="false">
+            <span class="nume">Fluture</span>
+          </button>
+          <button type="button" class="card tema-verde" data-anotimp="primavara" data-obiect="barza" draggable="true">
+            <img src="imagini/asset-barza.svg" alt="Barză" draggable="false">
+            <span class="nume">Barză</span>
+          </button>
+          <button type="button" class="card tema-verde" data-anotimp="primavara" data-obiect="zmeu" draggable="true">
+            <img src="imagini/asset-zmeu.svg" alt="Zmeu" draggable="false">
+            <span class="nume">Zmeu</span>
+          </button>
+          <button type="button" class="card tema-galben" data-anotimp="vara" data-obiect="inghetata" draggable="true">
+            <img src="imagini/asset-inghetata.svg" alt="Înghețată" draggable="false">
+            <span class="nume">Înghețată</span>
+          </button>
+          <button type="button" class="card tema-galben" data-anotimp="vara" data-obiect="minge" draggable="true">
+            <img src="imagini/asset-minge.svg" alt="Minge de plajă" draggable="false">
+            <span class="nume">Minge de plajă</span>
+          </button>
+          <button type="button" class="card tema-galben" data-anotimp="vara" data-obiect="ochelari" draggable="true">
+            <img src="imagini/asset-ochelari.svg" alt="Ochelari de soare" draggable="false">
+            <span class="nume">Ochelari de soare</span>
+          </button>
+          <button type="button" class="card tema-galben" data-anotimp="vara" data-obiect="pepene" draggable="true">
+            <img src="imagini/asset-pepene.svg" alt="Felie de pepene" draggable="false">
+            <span class="nume">Felie de pepene</span>
+          </button>
+        </div>
+      </div>
+    </aside>
+  </main>
+</body>
+</html>

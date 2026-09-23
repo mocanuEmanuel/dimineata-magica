@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="frunzaG" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#FFB300"/><stop offset="100%" stop-color="#E65100"/></linearGradient>
+  </defs>
+  <path d="M100 34 L112 66 L150 62 L128 90 L156 122 L118 116 L112 156 L100 130 L88 156 L82 116 L44 122 L72 90 L50 62 L88 66 Z" fill="url(#frunzaG)" stroke="#BF360C" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M100 60 L100 140" stroke="#BF360C" stroke-width="3" stroke-linecap="round"/>
+  <path d="M100 70 L84 84 M100 70 L116 84" stroke="#BF360C" stroke-width="3" stroke-linecap="round"/>
+  <path d="M100 100 L84 112 M100 100 L116 112" stroke="#BF360C" stroke-width="3" stroke-linecap="round"/>
+  <path d="M100 152 C100 162 100 170 100 178" fill="none" stroke="#5D4037" stroke-width="5" stroke-linecap="round"/>
+  <ellipse cx="78" cy="66" rx="6" ry="10" fill="#FFECB3" opacity="0.55" transform="rotate(-20 78 66)"/>
+  <ellipse cx="100" cy="180" rx="36" ry="6" fill="#5D4037" opacity="0.12"/>
+</svg>

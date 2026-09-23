@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prezență — Întâlnirea de dimineață</title>
+  <link rel="icon" href="imagini/bifa-ico.svg">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-pagina="prezenta">
+  <header class="bara-sus">
+    <nav class="meniu" aria-label="Navigație principală">
+      <a class="buton-meniu buton-calendar" href="index.html">
+        <img src="imagini/calendar-ico.svg" alt="">
+        <span>Calendar</span>
+      </a>
+      <a class="buton-meniu buton-prezenta activ" href="prezenta.html" aria-current="page">
+        <img src="imagini/bifa-ico.svg" alt="">
+        <span>Prezență</span>
+      </a>
+      <a class="buton-meniu buton-emotii" href="emotii.html">
+        <img src="imagini/fata-zambitoare-ico.svg" alt="">
+        <span>Emoții</span>
+      </a>
+      <a class="buton-meniu buton-anotimpuri" href="anotimpuri.html">
+        <img src="imagini/anotimpuri-ico.svg" alt="">
+        <span>Anotimpuri</span>
+      </a>
+    </nav>
+  </header>
+
+  <main class="continut continut-prezenta">
+    <section class="zona-principala" aria-label="Prezența">
+      <h1 class="titlu"><img class="ico-titlu" src="imagini/copii-ico.svg" alt="">Prezența</h1>
+
+      <div class="panou-data">
+        <div class="cap-data">
+          <button type="button" class="sageata" id="luna-anterioara" aria-label="Luna anterioară">
+            <img src="imagini/sageata-ico.svg" alt="" class="inversat">
+          </button>
+          <h2 class="titlu-data" id="titlu-data"></h2>
+          <button type="button" class="sageata" id="luna-urmatoare" aria-label="Luna următoare">
+            <img src="imagini/sageata-ico.svg" alt="">
+          </button>
+          <button type="button" class="buton-azi" id="buton-azi">Azi</button>
+        </div>
+        <div class="grila-zile" id="grila-zile"></div>
+      </div>
+
+      <p class="subtitlu-data" id="subtitlu-data"></p>
+
+      <div class="bara-adaugare">
+        <input type="text" id="input-nume" class="input-nume" placeholder="Scrie numele copilului…" maxlength="30" autocomplete="off" aria-label="Numele copilului">
+        <button type="button" id="buton-adauga" class="buton-adauga">
+          <img src="imagini/plus-ico.svg" alt="">
+          <span>Adaugă</span>
+        </button>
+      </div>
+
+      <div class="rand-zone">
+        <section class="coloana-zona" aria-label="Cei prezenți">
+          <h2 class="titlu-zona"><img src="imagini/bifa-ico.svg" alt="">Prezenți</h2>
+          <div class="cutie-prezenta" id="cutie-prezenta" data-zona="prezenta">
+            <span class="text-ajutor-prezenta">
+              <span>Trage aici poza ta dacă ai venit azi la grădiniță!</span>
+            </span>
+          </div>
+        </section>
+
+        <section class="coloana-zona" aria-label="Toți copiii">
+          <h2 class="titlu-zona"><img src="imagini/copii-ico.svg" alt="">Lista copii</h2>
+          <ul class="lista-copii" id="lista-copii" data-zona="abzenta"></ul>
+        </section>
+      </div>
+
+      <p class="mesaj-gol" id="mesaj-gol">
+        <img src="imagini/copii-ico.svg" alt="">
+        <span>Adaugă primul copil ca să începem prezența!</span>
+      </p>
+
+      <div class="bara-copii">
+        <button type="button" id="buton-copie" class="buton-copie" title="Salvează o copie: copii, prezență și zilele din calendar">
+          <span>Salvează copie</span>
+        </button>
+        <button type="button" id="buton-import" class="buton-copie" title="Încarcă o copie salvată (copii + calendar)">
+          <span>Încarcă copie</span>
+        </button>
+        <button type="button" id="buton-csv" class="buton-copie" title="Descarcă prezența în format CSV">
+          <span>Export CSV</span>
+        </button>
+      </div>
+
+      <input type="file" id="input-import" accept=".json,application/json" hidden>
+      <input type="file" id="input-poza" accept="image/*" hidden>
+    </section>
+
+    <footer class="bara-numar" id="bara-numar" aria-live="polite"></footer>
+  </main>
+</body>
+</html>

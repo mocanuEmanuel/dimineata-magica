@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendarul Naturii — Întâlnirea de dimineață</title>
+  <link rel="icon" href="imagini/copac-ico.svg">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-pagina="calendar">
+  <header class="bara-sus">
+    <nav class="meniu" aria-label="Navigație principală">
+      <a class="buton-meniu buton-calendar activ" href="index.html" aria-current="page">
+        <img src="imagini/calendar-ico.svg" alt="">
+        <span>Calendar</span>
+      </a>
+      <a class="buton-meniu buton-prezenta" href="prezenta.html">
+        <img src="imagini/bifa-ico.svg" alt="">
+        <span>Prezență</span>
+      </a>
+      <a class="buton-meniu buton-emotii" href="emotii.html">
+        <img src="imagini/fata-zambitoare-ico.svg" alt="">
+        <span>Emoții</span>
+      </a>
+      <a class="buton-meniu buton-anotimpuri" href="anotimpuri.html">
+        <img src="imagini/anotimpuri-ico.svg" alt="">
+        <span>Anotimpuri</span>
+      </a>
+    </nav>
+  </header>
+
+  <main class="continut">
+    <section class="zona-principala" aria-label="Calendarul naturii">
+      <h1 class="titlu"><img class="ico-titlu" src="imagini/copac-ico.svg" alt="">Calendarul Naturii</h1>
+
+      <div class="zona-propozitii">
+        <div class="propozitie tema-galben">
+          <span class="eticheta"><img src="imagini/calendar-ico.svg" alt="">Azi este ziua…</span>
+          <div class="zona-drop" data-categorie="zi" aria-label="Ziua săptămânii">
+            <span class="text-ajutor">trage aici</span>
+          </div>
+        </div>
+
+        <div class="propozitie tema-albastru">
+          <span class="eticheta"><img src="imagini/calendar-luni-ico.svg" alt="">Suntem în luna…</span>
+          <div class="zona-drop" data-categorie="luna" aria-label="Luna anului">
+            <span class="text-ajutor">trage aici</span>
+          </div>
+        </div>
+
+        <div class="propozitie tema-verde">
+          <span class="eticheta"><img src="imagini/copac-ico.svg" alt="">Anotimpul este…</span>
+          <div class="zona-drop" data-categorie="anotimp" aria-label="Anotimpul">
+            <span class="text-ajutor">trage aici</span>
+          </div>
+        </div>
+
+        <div class="propozitie tema-portocaliu">
+          <span class="eticheta"><img src="imagini/soare.svg" alt="">Afară este…</span>
+          <div class="zona-drop" data-categorie="vreme" aria-label="Vremea de afară">
+            <span class="text-ajutor">trage aici</span>
+          </div>
+        </div>
+
+        <div class="propozitie tema-rosu">
+          <span class="eticheta"><img src="imagini/cald.svg" alt="">Cald sau frig?</span>
+          <div class="zona-drop" data-categorie="temperatura" aria-label="Temperatura">
+            <span class="text-ajutor">trage aici</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <aside class="panou-lateral" aria-label="Alege data și cartonașele de tras">
+      <h2 class="titlu-panou"><img class="ico-panou" src="imagini/paleta-ico.svg" alt="">Alege și trage!</h2>
+
+      <div class="panou-data">
+        <div class="cap-data">
+          <button type="button" class="sageata" id="luna-anterioara" aria-label="Luna anterioară">
+            <img src="imagini/sageata-ico.svg" alt="" class="inversat">
+          </button>
+          <h3 class="titlu-data" id="titlu-data"></h3>
+          <button type="button" class="sageata" id="luna-urmatoare" aria-label="Luna următoare">
+            <img src="imagini/sageata-ico.svg" alt="">
+          </button>
+          <button type="button" class="buton-azi" id="buton-azi">Azi</button>
+        </div>
+        <div class="grila-zile" id="grila-zile"></div>
+      </div>
+
+      <p class="subtitlu-data" id="subtitlu-data"></p>
+
+      <div class="file-carti" role="tablist">
+        <button type="button" class="fila tema-galben activ" data-fila="zi">Zile</button>
+        <button type="button" class="fila tema-albastru" data-fila="luna">Luni</button>
+        <button type="button" class="fila tema-verde" data-fila="anotimp">Anotimpuri</button>
+        <button type="button" class="fila tema-portocaliu" data-fila="vreme">Vreme</button>
+        <button type="button" class="fila tema-rosu" data-fila="temperatura">Temperatură</button>
+      </div>
+
+      <div class="grup-fila" data-fila="zi">
+        <div class="carti">
+          <button type="button" class="card" data-categorie="zi" data-valoare="luni" draggable="true"><span class="nume">Luni</span></button>
+          <button type="button" class="card" data-categorie="zi" data-valoare="marti" draggable="true"><span class="nume">Marți</span></button>
+          <button type="button" class="card" data-categorie="zi" data-valoare="miercuri" draggable="true"><span class="nume">Miercuri</span></button>
+          <button type="button" class="card" data-categorie="zi" data-valoare="joi" draggable="true"><span class="nume">Joi</span></button>
+          <button type="button" class="card" data-categorie="zi" data-valoare="vineri" draggable="true"><span class="nume">Vineri</span></button>
+          <button type="button" class="card" data-categorie="zi" data-valoare="sambata" draggable="true"><span class="nume">Sâmbătă</span></button>
+          <button type="button" class="card" data-categorie="zi" data-valoare="duminica" draggable="true"><span class="nume">Duminică</span></button>
+        </div>
+      </div>
+
+      <div class="grup-fila" data-fila="luna" hidden>
+        <div class="carti">
+          <button type="button" class="card" data-categorie="luna" data-valoare="ianuarie" draggable="true"><span class="nume">Ianuarie</span></button>
+          <button type="button" class="card" data-categorie="luna" data-valoare="februarie" draggable="true"><span class="nume">Februarie</span></button>
+          <button type="button" class="card" data-categorie="luna" data-valoare="martie" draggable="true"><span class="nume">Martie</span></button>
+          <button type="button" class="card" data-categorie="luna" data-valoare="aprilie" draggable="true"><span class="nume">Aprilie</span></button>
+          <button type="button" class="card" data-categorie="luna" data-valoare="mai" draggable="true"><span class="nume">Mai</span></button>
+          <button type="button" class="card" data-categorie="luna" data-valoare="iunie" draggable="true"><span class="nume">Iunie</span></button>
+          <button type="button" class="card" data-categorie="luna" data-valoare="iulie" draggable="true"><span class="nume">Iulie</span></button>
+          <button type="button" class="card" data-categorie="luna" data-valoare="august" draggable="true"><span class="nume">August</span></button>
+          <button type="button" class="card" data-categorie="luna" data-valoare="septembrie" draggable="true"><span class="nume">Septembrie</span></button>
+          <button type="button" class="card" data-categorie="luna" data-valoare="octombrie" draggable="true"><span class="nume">Octombrie</span></button>
+          <button type="button" class="card" data-categorie="luna" data-valoare="noiembrie" draggable="true"><span class="nume">Noiembrie</span></button>
+          <button type="button" class="card" data-categorie="luna" data-valoare="decembrie" draggable="true"><span class="nume">Decembrie</span></button>
+        </div>
+      </div>
+
+      <div class="grup-fila" data-fila="anotimp" hidden>
+        <div class="carti">
+          <button type="button" class="card" data-categorie="anotimp" data-valoare="primavara" draggable="true">
+            <img src="imagini/asset-floare.svg" alt="Primăvara" draggable="false">
+            <span class="nume">Primăvara</span>
+          </button>
+          <button type="button" class="card" data-categorie="anotimp" data-valoare="vara" draggable="true">
+            <img src="imagini/soare.svg" alt="Vara" draggable="false">
+            <span class="nume">Vara</span>
+          </button>
+          <button type="button" class="card" data-categorie="anotimp" data-valoare="toamna" draggable="true">
+            <img src="imagini/asset-frunza.svg" alt="Toamna" draggable="false">
+            <span class="nume">Toamna</span>
+          </button>
+          <button type="button" class="card" data-categorie="anotimp" data-valoare="iarna" draggable="true">
+            <img src="imagini/asset-fulg.svg" alt="Iarna" draggable="false">
+            <span class="nume">Iarna</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="grup-fila" data-fila="vreme" hidden>
+        <div class="carti">
+          <button type="button" class="card" data-categorie="vreme" data-valoare="soare" draggable="true">
+            <img src="imagini/soare.svg" alt="Soare" draggable="false">
+            <span class="nume">Soare</span>
+          </button>
+          <button type="button" class="card" data-categorie="vreme" data-valoare="partial-nor" draggable="true">
+            <img src="imagini/partial-nor.svg" alt="Parțial înnorat" draggable="false">
+            <span class="nume">Parțial înnorat</span>
+          </button>
+          <button type="button" class="card" data-categorie="vreme" data-valoare="noros" draggable="true">
+            <img src="imagini/noros.svg" alt="Înnorat" draggable="false">
+            <span class="nume">Înnorat</span>
+          </button>
+          <button type="button" class="card" data-categorie="vreme" data-valoare="ploua" draggable="true">
+            <img src="imagini/ploaie.svg" alt="Plouă" draggable="false">
+            <span class="nume">Plouă</span>
+          </button>
+          <button type="button" class="card" data-categorie="vreme" data-valoare="ninge" draggable="true">
+            <img src="imagini/zapada.svg" alt="Ninge" draggable="false">
+            <span class="nume">Ninge</span>
+          </button>
+          <button type="button" class="card" data-categorie="vreme" data-valoare="vant" draggable="true">
+            <img src="imagini/vant.svg" alt="Vânt" draggable="false">
+            <span class="nume">Vânt</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="grup-fila" data-fila="temperatura" hidden>
+        <div class="carti">
+          <button type="button" class="card" data-categorie="temperatura" data-valoare="cald" draggable="true">
+            <img src="imagini/cald.svg" alt="Cald" draggable="false">
+            <span class="nume">Cald</span>
+          </button>
+          <button type="button" class="card" data-categorie="temperatura" data-valoare="frig" draggable="true">
+            <img src="imagini/frig.svg" alt="Frig" draggable="false">
+            <span class="nume">Frig</span>
+          </button>
+        </div>
+      </div>
+    </aside>
+  </main>
+</body>
+</html>

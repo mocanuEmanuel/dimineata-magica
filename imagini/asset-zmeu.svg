@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="zmeuG" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FFF176"/><stop offset="100%" stop-color="#FBC02D"/></linearGradient>
+  </defs>
+  <path d="M100 34 L148 86 L100 156 L52 86 Z" fill="url(#zmeuG)" stroke="#F57F17" stroke-width="5.5" stroke-linejoin="round"/>
+  <path d="M100 34 L148 86 L100 86 Z" fill="#FF7043" stroke="#E64A19" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M100 86 L148 86 L100 156 Z" fill="#66BB6A" stroke="#2E7D32" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M52 86 L100 86 L100 156 Z" fill="#FF8A80" stroke="#C62828" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M52 86 L100 86 L100 34 Z" fill="#4FC3F7" stroke="#0288D1" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M100 34 C104 34 106 38 106 42" fill="none" stroke="#F57F17" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M100 34 C96 34 94 38 94 42" fill="none" stroke="#F57F17" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M100 156 C100 166 96 174 84 180" fill="none" stroke="#8D6E63" stroke-width="4" stroke-linecap="round"/>
+  <g fill="#F48FB1" stroke="#C2185B" stroke-width="2.5" stroke-linejoin="round">
+    <path d="M74 168 l7 10 -7 10 -7 -10 Z" transform="rotate(-18 74 178)"/>
+    <path d="M60 160 l6.5 9.3 -6.5 9.3 -6.5 -9.3 Z" transform="rotate(-30 60 169)"/>
+    <path d="M48 148 l5.5 7.8 -5.5 7.8 -5.5 -7.8 Z" transform="rotate(-36 48 156)"/>
+  </g>
+  <g fill="#FFD54F" stroke="#F9A825" stroke-width="2" stroke-linejoin="round">
+    <path d="M84 156 l5.5 7.8 -5.5 7.8 -5.5 -7.8 Z" transform="rotate(14 84 164)"/>
+    <path d="M70 152 l5 7 -5 7 -5 -7 Z" transform="rotate(-6 70 159)"/>
+  </g>
+  <path d="M42 44 C34 40 26 40 22 46 C26 52 34 52 42 48 Z" fill="#FFFFFF" stroke="#B3E5FC" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M58 36 C52 32 46 32 42 37 C45 42 51 42 58 39 Z" fill="#FFFFFF" stroke="#B3E5FC" stroke-width="3" stroke-linejoin="round"/>
+  <g stroke="#B3E5FC" stroke-width="3" stroke-linecap="round" fill="none">
+    <path d="M152 30 q6 -8 14 -9"/>
+    <path d="M166 36 q6 -4 12 -4"/>
+  </g>
+</svg>
